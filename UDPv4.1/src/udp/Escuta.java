@@ -168,7 +168,7 @@ class Escuta extends Thread
                  ip = retornaIP(dadosRecebidos,9);
                  
                  // Depois de receber a resposta do Lookup, faz um Join na Rede
-                 no.Log.add("ID PROCURADO É: "+idProcurado+" ID SUCESSOR É: "+idSucessor);
+                 no.join(ip, no.identificador);
                                  
                  
                  
